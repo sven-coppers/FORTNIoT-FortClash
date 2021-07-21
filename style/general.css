@@ -1,0 +1,152 @@
+html {
+    /* zoom: 125%; */ /* Does not work when collapsing nested groups */
+}
+
+body {
+    padding: 10px;
+}
+
+.use_cases {
+    display: table;
+    width: 100%;
+}
+
+.use_case {
+    display: table-row;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.use_case:last-child {
+    border: none;
+}
+
+.look_and_feel {
+    border-right: 2px dashed darkgray;
+    display: table-cell;
+    margin-bottom: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+    position: relative; /* For the limbo accept and reject buttons */
+    display: table-cell;
+}
+
+.look_and_feel:last-child {
+    border-right: none;
+    margin-right: 0px;
+}
+
+.use_cases p {
+    margin-bottom: 10px;
+}
+
+.use_case h2 {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.use_case table td {
+    padding: 5px;
+}
+
+.header {
+    width: 100%;
+    font-family: Verdana;
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+   /*  position: fixed; */
+ /*   top: 0px; */
+    z-index: 2;
+    transition: 750ms;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.controls {
+    font-size: 18px;
+    background-color: #1ea9f4;
+    padding: 8px;
+    color: white;
+    padding-left: 20px;
+}
+.controls form {
+    float: left;
+}
+
+.header a {
+    text-decoration: none;
+    color: #0A8ED5;
+}
+
+.logos {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.logos img {
+    height: 20px;
+}
+
+.logos sup {
+    margin-left: 10px;
+    vertical-align: top;
+    margin-right: 2px;
+}
+
+.icon {
+    height: 13px;
+}
+
+.header p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.header p.contact {
+    font-size: 15px;
+}
+
+.header_content {
+    padding: 20px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+#iot {
+    transition: 250ms;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#explanation_toggle {
+    color: white;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-weight: bold;
+    transform: rotate(90deg);
+    margin-right: 8px;
+    font-size: 17px;
+    padding: 2px;
+    border-radius: 18px;
+    padding-left: 12px;
+    padding-right: 10px;
+    transition: 500ms ease-in-out;
+}
+
+#explanation_toggle:hover {
+    background-color: #0A8ED5;
+}
+
+#explanation_toggle.collapsed {
+    transform: rotate(-90deg);
+}
